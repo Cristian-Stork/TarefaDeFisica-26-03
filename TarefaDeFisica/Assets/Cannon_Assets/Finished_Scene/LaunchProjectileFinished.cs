@@ -23,7 +23,7 @@ public class LaunchProjectileFinished : MonoBehaviour
             if (cannonRb != null)
             {
                 cannonRb.AddRelativeForce(new Vector3(0, 0, recoilForce), ForceMode.Impulse);
-                //cannonRb.AddForce(-transform.up * recoilForce, ForceMode.Impulse);
+                cannonRb.AddForce(-transform.up * recoilForce, ForceMode.Impulse);
             }
         }
     }
